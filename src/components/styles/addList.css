@@ -1,0 +1,131 @@
+.left-panel {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: var(--conditional-pop-over);
+  }
+  
+  .avatar-with-man-in-green-shirt {
+    position: absolute;
+    top: 200px;
+    left: 219px;
+    width: 273px;
+    height: 100px;
+  }
+  
+  .brands-instagram1 {
+    position: absolute;
+    top: 949px;
+    left: 256px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+  }
+  
+  .button-wrapper {
+    position: absolute;
+    top: 690px;
+    left: 225px;
+    width: 342px;
+    height: 64px;
+    text-align: center;
+    color: var(--conditional-pop-over);
+  }
+  
+  .button1 {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--drop-shadow-button-primary);
+    border-radius: var(--br-11xs);
+    background-color: var(--color-royalblue);
+    border: 1px solid var(--primary-6);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-8xs) var(--padding-base);
+    gap: var(--gap-5xs);
+  }
+  
+  .icon-wrapper {
+    width: 14px;
+    height: 14px;
+    object-fit: cover;
+    display: none;
+  }
+  
+  .text1 {
+    line-height: 28px;
+    font-weight: 500;
+  }
+  
+  .todo {
+    position: absolute;
+    top: 267px;
+    left: 350px;
+    font-size: var(--font-size-14xl-1);
+    display: inline-block;
+    width: 127.7px;
+    height: 38px;
+  }
+  
+  .input2,
+  .input4 {
+    position: absolute;
+    top: 488px;
+    left: 201px;
+    border-radius: var(--br-11xs);
+    background-color: var(--conditional-pop-over);
+    border: 1px solid var(--neutral-5);
+    box-sizing: border-box;
+    width: 378px;
+    height: 64px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: var(--padding-5xs) var(--padding-xs);
+  }
+  
+  .input4 {
+    top: 581px;
+  }
+  
+  .wrapper {
+    flex: 1;
+    overflow: hidden;
+    align-items: center;
+  }
+  
+  .input3 {
+    line-height: 28px;
+  }
+  
+  .group-icon1 {
+    position: absolute;
+    height: 6.43%;
+    width: 2.75%;
+    top: 7.81%;
+    right: 90.5%;
+    bottom: 85.76%;
+    left: 6.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+  }
+  
+  .lorem-ipsum-dolor1 {
+    position: absolute;
+    top: 326px;
+    left: 150px;
+    line-height: 150%;
+    color: var(--color-gray-100);
+    text-align: center;
+    display: inline-block;
+    width: 516px;
+    height: 123px;
+  }
+  
