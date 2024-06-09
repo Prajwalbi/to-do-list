@@ -1,7 +1,10 @@
 import { connect } from "react-redux";
 import { removeItem, completedItem, favouriteItem } from "./actions/items";
+import getVisibleItems from "./selectors/items";
 
-const DisplayList = ({items, startRemoveItem, startCompleteItem, startFovouriteItem}) => {
+const DisplayList = ({itemsList, filters, startRemoveItem, startCompleteItem, startFovouriteItem}) => {
+
+    const items = getVisibleItems(itemsList, filters);
     const handleDelete = (id) => {
         console.log("The generated id is " , id);
         startRemoveItem({id});
@@ -31,7 +34,8 @@ const DisplayList = ({items, startRemoveItem, startCompleteItem, startFovouriteI
 }
 
 const mapStateToProps = (state) => ({
-    items: state.items
+    itemsList: state.items,
+    filters: state.filters
 })
 
 const mapDispatchToProps = (dispatch) => ({
