@@ -1,12 +1,12 @@
 import { connect } from "react-redux";
-import { removeItem, completedItem, favouriteItem } from "./actions/items";
+import { startCompletedItem, startFavouriteItem, startRemoveItem } from "./actions/items";
 import getVisibleItems from "./selectors/items";
 
 const DisplayList = ({itemsList, filters, startRemoveItem, startCompleteItem, startFovouriteItem}) => {
 
     const items = getVisibleItems(itemsList, filters);
+
     const handleDelete = (id) => {
-        console.log("The generated id is " , id);
         startRemoveItem({id});
     }
     const handleComplete = (id) => {
@@ -38,10 +38,12 @@ const mapStateToProps = (state) => ({
     filters: state.filters
 })
 
+
+
 const mapDispatchToProps = (dispatch) => ({
-    startRemoveItem : (id) => dispatch(removeItem( id )),
-    startCompleteItem : (id) => dispatch(completedItem( id )),
-    startFovouriteItem : (id) => dispatch(favouriteItem( id ))
+    startRemoveItem : (id) => dispatch(startRemoveItem( id )),
+    startCompleteItem : (id) => dispatch(startCompletedItem( id )),
+    startFovouriteItem : (id) => dispatch(startFavouriteItem( id ))
 })
 export default connect(mapStateToProps, mapDispatchToProps)(DisplayList);
 

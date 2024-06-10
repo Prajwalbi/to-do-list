@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { connect } from "react-redux";
-import { addItem } from "./actions/items";
+import {  startAddItem } from "./actions/items";
 import { v4 as uuidv4 } from 'uuid';
 
 const AddList = ({ startAddItem }) => {
@@ -10,7 +10,6 @@ const AddList = ({ startAddItem }) => {
       e.preventDefault();
       console.log(uuidv4());
       startAddItem({
-        id: uuidv4(),
         title,
         description,
         status: "submitted"
@@ -31,7 +30,7 @@ const AddList = ({ startAddItem }) => {
   </div>);
 }
 const mapDispatchToProps = (dispatch) => ({
-      startAddItem: (item) => dispatch(addItem(item))
+      startAddItem: (item) => dispatch(startAddItem(item))
 });
 
 export default connect(null, mapDispatchToProps)(AddList);

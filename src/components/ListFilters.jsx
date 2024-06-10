@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { connect } from "react-redux";
 import { filterByCompleted, filterByDeleted, filterByFavourite, resetFilter, setTextFilter } from "./actions/filters";
 const ListFilters = ({filters, dispatch}) => {

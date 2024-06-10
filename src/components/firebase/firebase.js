@@ -2,6 +2,8 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { GoogleAuthProvider } from "firebase/auth";
+import { getAuth } from "firebase/auth";
+import { setPersistence , browserLocalPersistence } from "firebase/auth";
 import { getDatabase, ref, remove, set, update,onValue, push , onChildRemoved, onChildChanged , get} from "firebase/database"; 
 
 // TODO: Add SDKs for Firebase products that you want to use
@@ -25,7 +27,13 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const database = getDatabase(app);
 
-
+const auth = getAuth(app);
 const googleAuthProvider = new GoogleAuthProvider();
 
-export {  database as default,  ref, remove, set, update,onValue, push , onChildRemoved, onChildChanged, get, googleAuthProvider }; 
+// Set persistence mode to local
+setPersistence(auth, browserLocalPersistence).catch((error) => {
+  console.error("Error setting auth persistence:", error);
+});
+
+
+export {  database as default,  ref, remove, set, update,onValue, push , onChildRemoved, onChildChanged, get,auth, googleAuthProvider }; 

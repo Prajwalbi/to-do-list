@@ -1,0 +1,18 @@
+.rectangle-image{
+width: 853px;
+height: 99vh;
+top: 0px;
+left: 100rem;
+gap: 0px;
+opacity: 0px;
+   
+}
+
+.img-parent{
+    position: absolute;
+}
+
+.div{
+    display: flex;
+
+}

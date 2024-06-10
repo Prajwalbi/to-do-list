@@ -1,16 +1,42 @@
-import { useState } from 'react'
-import Dashboard from './components/Dashboard';
-import { Provider } from 'react-redux'
+
+import React, { useEffect } from 'react';
+import { Provider, useDispatch } from 'react-redux';
 import configureStore from './components/store/configureStore';
+import AppRouter from './components/routers/AppRouter';
+import { AuthProvider, useAuth } from './components/contexts/authContexts';
+import { login, logout } from './components/actions/auth';
+import { startSetItems } from './components/actions/items';
 
+const store = configureStore();
 
-const App  = () =>  {
-  const store = configureStore();
-  return (<div>
-     <Provider store={store}>
-        <Dashboard />
-    </Provider>
-  </div>);
-}
+const AppContent = () => {
+  const { userLoggedIn, loading, currentUser } = useAuth();
+  const dispatch = useDispatch();
 
-export default App
+  useEffect(() => {
+    if (userLoggedIn && currentUser) {
+      dispatch(login(currentUser.uid));
+      dispatch(startSetItems());
+    } else {
+      dispatch(logout());
+    }
+  }, [userLoggedIn, currentUser, dispatch]);
+
+  if (loading) {
+    return <div>Loading...</div>; // Optionally, render a loading spinner or similar
+  }
+
+  return <AppRouter />;
+};
+
+const App = () => {
+  return (
+    <AuthProvider>
+      <Provider store={store}>
+        <AppContent />
+      </Provider>
+    </AuthProvider>
+  );
+};
+
+export default App;
