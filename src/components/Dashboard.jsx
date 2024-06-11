@@ -15,7 +15,7 @@ const Dashboard = () => {
             <div className="parent-container">
                     <div className="left-container">
                         <div className="logo-container">
-                             <img className="logo" src="/src/assets/logo.svg" alt="logo" />  
+                             <img className="logo" src="/group.svg" alt="logo" />  
                         </div>
                         <AddList />
                     </div>
