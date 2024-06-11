@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.brands-instagram {
+  position: absolute;
+  top: 949px;
+  left: 256px;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+.login {
+  position: absolute;
+  top: 260px;
+  left: 374px;
+  display: inline-block;
+  width: 500px;
+  height: 38.84px;
+  font-size: 33.14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  
+}
+.group-icon {
+  position: absolute;
+  height: 6.43%;
+  width: 2.75%;
+  top: 7.81%;
+  right: 90.5%;
+  bottom: 85.76%;
+  left: 6.75%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.text {
+  width: 72px;
+  position: relative;
+  font-size: var(--body-regular-size);
+  line-height: 22px;
+  font-family: var(--body-regular);
+  color: var(--conditional-pop-over);
+  text-align: center;
+  display: none;
+}
+.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: var(--drop-shadow-button-primary);
+  border-radius: 2px;
+  background-color: var(--color-royalblue);
+  width: 387px;
+  height: 69px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px, 16px, 5px, 16px;
+  box-sizing: border-box;
+}
+.sign-in-using {
+  position: absolute;
+  top: 18px;
+  left: 100px;
+  font-size: 26px;
+  color: #FFFFFF;
+  text-align: left;
+  display: inline-block;
+  width: 287px;
+  height: 47px;
+  line-height: 30.47px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.group-child {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  border-radius: 5px;
+  background-color: var(--conditional-pop-over);
+  width: 58px;
+  height: 57px;
+  background-color: #FFFFFF;
+}
+.grommet-iconsgoogle {
+  position: absolute;
+  top: 17px;
+  left: 16px;
+  width: 36px;
+  height: 36px;
+  overflow: hidden;
+}
+.button-parent,
+.desktop-1-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 387px;
+  height: 69px;
+}
+.desktop-1-inner {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  background-color: #597EF7;
+  top: 480px;
+  left: 216px;
+}
+.lorem-ipsum-dolor {
+  position: absolute;
+  top: 320px;
+  left: 170px;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-gray-100);
+  text-align: center;
+  display: inline-block;
+  width: 516px;
+  height: 123px;
+  font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.illustration-export-icon {
+  position: absolute;
+  top: 1px;
+  left: 755px;
+  width: 853px;
+  height: 1024px;
+  object-fit: cover;
+}
+.desktop-1 {
+  background-color: var(--conditional-pop-over);
+  overflow: hidden;
+}
+.desktop-1,
+.desktop-1-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1600px;
+  height: 1024px;
+}
+.login-signup {
+  width: 100%;
+  position: relative;
+  background-color: var(--conditional-pop-over);
+  /* height: 1024px; */
+  height: calc(100vh - 16px);
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-14xl-1);
+  color: var(--character-title-85);
+  font-family: var(--body-regular);
+}
+@media screen and (max-width: 1200px) {
+  .desktop-1-inner {
+    cursor: pointer;
+  }
+}

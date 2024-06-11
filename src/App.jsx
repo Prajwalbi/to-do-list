@@ -1,9 +1,9 @@
 
 import React, { useEffect } from 'react';
 import { Provider, useDispatch } from 'react-redux';
-import configureStore from './components/store/configureStore';
+import configureStore from './store/configureStore';
 import AppRouter from './components/routers/AppRouter';
-import { AuthProvider, useAuth } from './components/contexts/authContexts';
+import { AuthProvider , useAuth } from './components/contexts/authContexts';
 import { login, logout } from './components/actions/auth';
 import { startSetItems } from './components/actions/items';
 

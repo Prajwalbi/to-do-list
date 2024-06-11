@@ -1,0 +1,305 @@
+
+.parent-container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-container{
+    width: 824px;
+    position: relative;
+}
+
+
+.logo-container{
+    position: absolute;
+    top: 80px;
+    left: 108px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.logo{
+    width: 44px;
+    height: 65.76px;
+}
+
+.todo-header{
+    position: relative;
+    width: 127.7px;
+    height: 37.96px;
+    top: 170px;
+    left: 350px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 33.14px;
+    line-height: 38.84px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.paragraph{
+    position: relative;
+    width: 516px;
+    height: 123px;
+    top: 170px;
+    left: 150px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.paragraph p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #0000008C;
+}
+.input{
+    position: relative;
+    width: 378px;
+    height: 30px;
+    left: 201px;
+    padding: 8px 12px 8px 12px;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    font-size: medium;
+}
+
+.input-title{
+    top: 190px;
+}
+
+.input-description{
+    top: 220px;
+}
+
+.button{
+    position: relative;
+    width: 342px;
+    height: 64px;
+    top: 250px;
+    left: 225px;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #597EF7;
+    border: 1px solid #1890FF;
+    color: white;
+}
+
+.vertical-line {
+    position: relative;
+    top: 49px;
+    height: 630px; /* Height of the vertical line */
+    border: 1px solid #00000026;
+    margin-right: 70px;
+}
+
+
+.todo-title{
+    margin-top: 80px;
+    width: 125px;
+    height: 29px;
+    top: 100px;
+    left: 882px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25.14px;
+    line-height: 29.46px;
+    text-align: left;
+}
+.left-list-content p{
+    padding: 5px 10px;
+    margin: 0;
+}
+.filter-container{
+    display: flex;
+   position: relative;
+   margin-bottom: 100px;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 240px; 
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 12px;
+    padding-right: 36px; /* Space for the icon */
+    box-sizing: border-box;
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px; /* Adjust based on input padding */
+    pointer-events: none; /* Prevent the icon from capturing clicks */
+    color: #aaa; /* Icon color */
+}
+
+ .select-filter{
+    position: absolute;
+    width: 160px;
+    height: 35px;
+    left: 380px;
+    padding: 4px 12px 4px 12px;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.select-filter-option{
+    width: 118px;
+    height:  32px;
+    padding: 5px 12px 5px 12px;
+    gap: 8px;
+    opacity: 0px;
+    background: #F5F5F5;
+} 
+
+/* list-container */
+.list-container-parentt{
+   margin-top: 150px;
+}
+.list-container{
+    width: 500.02px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Dropdown container */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    /* height: 69.48px; */
+  }
+  
+  .list-title{
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: #000000D9;
+  }
+
+  .list-description{
+   
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #000000D9;
+
+  }
+  /* SVG Icon */
+  .dropdown-icon {
+    cursor: pointer;
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  /* Dropdown buttons */
+  .dropdown-menu button {
+    padding: 8px 12px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    width: 118px;
+    height: 32px;
+    font-weight: 400;
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: #f1f1f1;
+  }
+ 
+  .horizontal-line {
+    /* height: 630px; Height of the vertical line */
+    border: 1px solid #00000026;
+    /* margin-right: 70px; */
+}
+
+
+
+.button-container{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    }
+
+
+.button-26 {
+
+  appearance: button;
+  background-color: #597EF7;
+  border: 1px solid #1890FF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Graphik,-apple-system,system-ui,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+  font-size: 14px;
+  line-height: 1.15;
+  overflow: visible;
+  padding: 12px 16px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: all 80ms ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+}
+
+.button-26:disabled {
+  opacity: .5;
+}
+
+.button-26:focus {
+  outline: 0;
+}
+
+button:hover {
+  background-color: #235beb;
+  border-color: #1851e3;
+  cursor: ;
+}
+
+.button-26:active {
+  background-color: #0039D7;
+  border-color: #0039D7;
+}
