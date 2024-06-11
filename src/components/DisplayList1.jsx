@@ -53,7 +53,7 @@ const DisplayList = ({ itemsList, filters, startRemoveItem, startCompleteItem, s
             <div className="dropdown-container">
               <img
                 className="dropdown-icon"
-                src="/src/assets/dropDownIcon.svg"
+                src="/dropDownIcon.svg"
                 alt="Dropdown Icon"
                 onClick={() => toggleDropdown(item.id)}
               />
