@@ -44,9 +44,6 @@ const Login = () => {
           <img className="group-icon" alt="" src="/group.svg" />
           <button onClick={ LoginHandler } className="desktop-1-inner">
             <div className="button-parent">
-              <div className="button">
-                <div className="text">Button Title</div>
-              </div>
               <div className="sign-in-using">Sign in using Google</div>
               <div className="group-child" />
               <img
